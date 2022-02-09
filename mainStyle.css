@@ -1,14 +1,16 @@
 *{
-    box-sizing: border-box;
+    
     margin: 0;
     padding: 0;
     
 }
 body{
-    /* background-image: url('IMG-1125.JPG'); */
+    background-image: url('IMG-1125.JPG');
     background-repeat: no-repeat;
     background-size: cover;
     font-family:'Special Elite', cursive;
+    width: 100%;
+    height: auto;
     
 }
 
@@ -38,6 +40,7 @@ nav ul li a{
     text-transform: uppercase;
     padding: 7px 13px;
     border-radius: 3px;
+    position: sticky;
 
 }
 
@@ -52,16 +55,13 @@ a.barra:hover{
 .container{
     display: grid;
     grid-template-columns: 1fr ;
-    /* grid-gap: 10px; */
-    
-
 }
 
 /* image is not whole, how can I size it correctly? */
 .container > div{
     height: calc(100vh-80px);
     background: url("Images/IMG-1890.jpg") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-attachment: fixed;
 
 }
@@ -77,12 +77,14 @@ a.barra:hover{
     align-content: center;
     text-align: right;
     /* font-family: 'Comforter', cursive; */
-    font-size: 30px;
+    font-size: 4vw;
     height: 150px;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 130px;
     padding-right: 30px;
     padding-bottom: 30px;
+    letter-spacing: 5px;
+   
 }
 
 .name:hover{
@@ -98,27 +100,36 @@ a.barra:hover{
     padding-bottom: 30px;
     padding-right: 160px;
     font-size: 25px;
-    
-    
+}
 
-}
-.content{
-    grid-column: 1 / 3;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 25px;
-    padding-bottom: 50px;
-   
-}
+
 
 /* about */
 #about {
-    padding-top: 100px;
-    background-image: url("Images/IMG-1946.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom center;
-    padding-left: 50px;
-    padding-right: 50px;
+   
+    background-color: white;
+    height: 600px;
+    font-size: 18px;
 }
+
+#pic2{
+    width: 30%;
+    float: right;
+    margin-top: 18px;
+    border-radius: 50%;  
+}
+
+.greet{
+    display: block;
+    box-sizing: border-box;
+    width: 65%;
+    font-size: 18px;
+    text-align: right;
+    padding: 15px;
+    margin: 18px 18px 20px 0px;
+    line-height: 1.5em;
+    
+}
+    
+    
     
